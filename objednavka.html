@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objednávající formulář</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="bg-primary">
+<header class="bg-dark text-center">
+    <div class="display-6 text-light">Formulář pro doručení <a href="index.html"><img src="/images/private-services-logo.png" class="rounded" alt="Sheep 1" height="70" width="75"></a></div>
+</header>
+
+<main>
+    <form action="/odeslat-objednavku" method="post">
+<center>
+        <table>
+        <tr>
+            <td class="text-center"><label for="jmeno">Jméno & Příjmení:</label></td>
+            <td><input type="text" id="jmeno" name="jmeno" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"> <label for="datum">Datum narození:</label> </td>
+            <td><input type="date" name="datum"></td>
+            
+        </tr>
+        <tr>
+            <td class="text-center"><label for="email">E-mail:</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"><label for="tel">Tel. číslo:</label></td>
+            <td><input type="tel" id="tel" name="tel" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"><label for="mesto">Město:</label></td>
+            <td><input type="text" id="mesto" name="mesto" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"><label for="uliceacislo">Ulice a Číslo:</label></td>
+            <td><input type="text" id="uliceacislo" name="uliceacislo" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"><label for="psc">PSČ:</label></td>
+            <td><input type="text" id="psc" name="psc" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"><label for="Země">Země:</td> 
+            <td>
+                <select name="zeme" id="zeme">
+                <option value="eu">EU</option>
+                <option value="neeu">Mimo EU</option>
+            </label>
+            </select>
+            </td>
+            
+        </tr>
+        <tr>
+            <td class="text-center"><label for="pocet">Počet(ks) Model bavorian:</label></td>
+            <td><input type="number" id="pocet" name="pocet" min="1" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"><label for="pocet">Počet(ks) Model columbian:</label></td>
+            <td><input type="number" id="pocet" name="pocet" min="1" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"><label for="poznamky">Poznámky k objednávce:</label></td>
+            <td><textarea id="poznamky" name="poznamky" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td class="text-center"><label for="podpis">Podpis</label></td>
+            <td><textarea name="podpis" cols="15" rows="5">PODPIS</textarea>
+                <input type="submit" value="Potvrdit">
+                <input type="reset" value="Resetovat">
+            </td>
+        </tr>
+        <tr>
+            <td class="start"><label for="souhlas">Zaškrtnutím tohoto pole souhlasíte s <a href="obchodnipodminky.html" class="text-warning">obchodními podmínkami</a> a že jste se s nimi seznámil/a.</label></td>
+            <td><input type="checkbox" id="souhlas" name="souhlas" required></td>
+        </tr>
+        <tr>
+            <td class="text-center"><input type="submit" value="Odeslat objednávku"></td>
+        </tr>
+        </table>
+    </center>
+
+    </form>
+    <p class="text-warning">!!POKUD SE SNAŽÍTE OBJEDNAT PRODUKT ZE SEKCE PODPULTOVKY MUSÍTE NÁZEV PRODUKTU I POČET(KS) VYPSAT V KOLONCE POZNÁMKY K OBJEDNÁVCE!!</p>
+</main>
+    
+<footer>
+        <p class="text-center">&copy; 2023 PASÁCKÁ SEBRANKA Jaroslav Herda </p>
+        <a href="index.html"><img src="/images/private-services-logo.png" class="rounded mx-auto d-block" alt="Sheep 1" height="70" width="75"></a>
+</footer>
+</body>
+</html>
